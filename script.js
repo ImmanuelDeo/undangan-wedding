@@ -6,3 +6,12 @@ if (music.paused) {
     });
 }
 });
+
+document.getElementById("startButton").addEventListener("click", function () {
+    const audio = document.getElementById("music");
+    const video = document.getElementById("weddingVideo");
+
+    audio.play();
+    video.play();
+    document.getElementById("startOverlay").style.display = "none";
+});

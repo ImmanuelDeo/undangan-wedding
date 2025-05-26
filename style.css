@@ -16,7 +16,7 @@ background-color: black;
 video#weddingVideo {
 width: 100%;
 height: 100%;
-object-fit: cover; /* or use contain if prefer */
+object-fit: fill; /* or use contain if prefer */
 }
 
 .video-container {

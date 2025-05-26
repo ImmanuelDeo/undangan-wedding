@@ -1,4 +1,4 @@
-/* STYLE.CSS */
+/* Reset CSS */
 * {
 margin: 0;
 padding: 0;
@@ -6,18 +6,25 @@ box-sizing: border-box;
 }
 
 html, body {
-height: 100%;
 width: 100%;
+height: 100%;
 overflow: hidden;
-font-family: sans-serif;
+background-color: black;
 }
 
-video {
+/* Video container full screen */
+.video-container {
 position: fixed;
 top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-object-fit: cover;
-z-index: -1;
+  z-index: -1; /* di belakang elemen lain */
+}
+
+/* Video responsive */
+video#weddingVideo {
+width: 100%;
+height: 100%;
+object-fit: cover; /* or use contain if prefer */
 }

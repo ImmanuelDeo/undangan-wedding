@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -22,6 +22,43 @@
     <source src="assets/audio/backsound.mp3" type="audio/mpeg" />
     Browser kamu tidak mendukung audio.
     </audio>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tika & Zaini Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Latar blur -->
+<div class="video-background">
+    <video src="assets/videos/undangan-kaka-omJen.mp4" autoplay muted loop playsinline></video>
+</div>
+
+<!-- Video utama -->
+<div class="video-foreground">
+    <video id="weddingVideo" muted playsinline>
+    <source src="assets/videos/undangan-kaka-omJen.mp4" type="video/mp4" />
+    Browser kamu tidak mendukung video.
+    </video>
+</div>
+
+<!-- Tombol mulai -->
+<div id="startOverlay" class="start-overlay">
+    <button id="startButton">Buka Undangan</button>
+</div>
+
+<!-- Musik -->
+<audio id="music" autoplay loop>
+    <source src="assets/audio/backsound.mp3" type="audio/mpeg" />
+</audio>
 
 <script src="script.js"></script>
 </body>
